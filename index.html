@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Sorting for a Greener Life | Environmental Action</title>
+    <style>
+        :root {
+            --primary-green: #4CAF50;
+            --secondary-green: #388E3C;
+            --recycle-blue: #2196F3;
+            --hazard-red: #F44336;
+            --kitchen-orange: #FF9800;
+            --other-gray: #9E9E9E;
+            --light-bg: #F9F9F9;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        .eco-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .eco-icon {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 15s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--secondary-green);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-green);
+            display: inline-block;
+        }
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .benefit-card {
+            background: var(--light-bg);
+            border-left: 4px solid var(--primary-green);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .benefit-card h3 {
+            color: var(--secondary-green);
+            margin-bottom: 0.8rem;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .category {
+            border-radius: 10px;
+            padding: 1.8rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .category::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .category-content {
+            position: relative;
+            z-index: 2;
+        }
+        .category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .recycle {
+            background: linear-gradient(135deg, var(--recycle-blue), #0D47A1);
+        }
+        .hazard {
+            background: linear-gradient(135deg, var(--hazard-red), #B71C1C);
+        }
+        .kitchen {
+            background: linear-gradient(135deg, var(--kitchen-orange), #E65100);
+        }
+        .other {
+            background: linear-gradient(135deg, var(--other-gray), #424242);
+        }
+        .examples {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            color: #333;
+        }
+        .examples h4 {
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: bold;
+        }
+        .examples ul {
+            padding-left: 1.2rem;
+        }
+        .examples li {
+            margin-bottom: 0.4rem;
+            color: #333;
+        }
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .step {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+        }
+        .step-number {
+            background: var(--primary-green);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        .step h3 {
+            color: var(--secondary-green);
+            margin-bottom: 0.8rem;
+        }
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(to right, var(--recycle-blue), var(--primary-green));
+            color: white;
+            padding: 3rem 1rem;
+            border-radius: 10px;
+        }
+        .cta-section h2 {
+            color: white;
+            border-bottom: 3px solid rgba(255,255,255,0.5);
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--secondary-green);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="eco-icons" id="ecoIcons"></div>
+        <div class="header-content">
+            <h1>Waste Sorting for a Greener Life</h1>
+            <p class="subtitle">Reduce pollution, conserve resources, and help build cleaner communities - waste sorting is a simple way to protect the environment.</p>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Current status of garbage problem -->
+        <section class="card">
+            <h2>Why Waste Sorting Matters</h2>
+            <p>As cities continue to grow, the amount of household waste generated each year is rising. In many urban areas, increasing waste volumes are placing greater pressure on landfills, public health systems, and the environment. Waste sorting is an important step toward addressing this challenge.</p>
+            <div class="importance-grid">
+                <div class="benefit-card">
+                    <h3>Reduce Environmental Pollution</h3>
+                    <p>Waste sorting helps reduce environmental pollution by preventing hazardous items—such as used batteries and light bulbs containing heavy metals—from contaminating soil and water.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Conserve Natural Resources</h3>
+                    <p>Recycling one ton of paper can save approximately 17 trees. Waste sorting makes it easier to recover and reuse valuable resources.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Reduce Processing Costs</h3>
+                    <p>Sorted waste is easier to process. Recyclable materials can be recovered for reuse, and food waste can be turned into compost or organic fertilizer, helping reduce overall treatment costs.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sorting Guide -->
+        <section class="card">
+            <h2>Waste Sorting Guide</h2>
+            <p>Household waste is usually divided into four categories. Learning how to sort it correctly is the first step toward living more sustainably:</p>
+            <div class="categories">
+                <div class="category recycle">
+                    <div class="category-content">
+                        <h3>Recyclable Waste</h3>
+                        <p>Household items that can be recycled</p>
+                        <div class="examples">
+                            <h4>Common Items:</h4>
+                            <ul>
+                                <li>Paper: newspapers, books, cartons, etc.</li>
+                                <li>Plastic: beverage bottles, plastic toys, etc.</li>
+                                <li>Glass: glass bottles, jars, and other glass containers</li>
+                                <li>Metal: cans, tins, and other metal items</li>
+                                <li>Textiles: old clothes, towels, and bed sheets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category hazard">
+                    <div class="category-content">
+                        <h3>Hazardous Waste</h3>
+                        <p>Waste that may directly or indirectly harm human health or the natural environment</p>
+                        <div class="examples">
+                            <h4>Common Items:</h4>
+                            <ul>
+                                <li>Waste batteries: rechargeable batteries, button batteries</li>
+                                <li>Used fluorescent tubes and energy-saving bulbs</li>
+                                <li>Expired or unused medicines</li>
+                                <li>Household chemicals such as paint and pesticides</li>
+                                <li>Items containing mercury, such as thermometers and blood pressure monitors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category kitchen">
+                    <div class="category-content">
+                        <h3>Food Waste</h3>
+                        <p>Biodegradable household waste</p>
+                        <div class="examples">
+                            <h4>Common Items:</h4>
+                            <ul>
+                                <li>Food scraps: leftovers, fruit peels, fruit cores</li>
+                                <li>Tea leaves and coffee grounds</li>
+                                <li>Expired food, such as bread, pastries, and meat</li>
+                                <li>Plants: fallen leaves, broken branches</li>
+                                <li>Pet food and other small amounts of organic leftovers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category other">
+                    <div class="category-content">
+                        <h3>General Waste</h3>
+                        <p>Household waste that does not belong in the categories above</p>
+                        <div class="examples">
+                            <h4>Common Items:</h4>
+                            <ul>
+                                <li>Contaminated paper: toilet paper, napkins</li>
+                                <li>Single-use items such as used paper cups and plastic bags</li>
+                                <li>Ceramic fragments: bowls, dishes, flower pots</li>
+                                <li>Dust, hair, and cigarette butts</li>
+                                <li>Hard-to-process items such as large bones and hard fruit shells</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sorting Steps -->
+        <section class="card">
+            <h2>Four Steps to Waste Sorting</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Sort Waste at the Source</h3>
+                    <p>Set up separate bins at home to sort waste before disposal.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Proper Disposal</h3>
+                    <p>Put sorted waste into the correct collection bins in your community.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Separate Collection and Transport</h3>
+                    <p>Different types of waste are collected and transported separately to the appropriate treatment facilities.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Category-Based Treatment</h3>
+                    <p>Recyclables are recovered for reuse, food waste is composted, and hazardous waste is treated safely using special handling methods.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Join the Waste Sorting Movement</h2>
+            <p>Start today, right at home. Waste sorting is not only an environmentally responsible habit, but also a shared social responsibility. Let’s adopt greener habits and create a cleaner, healthier world for future generations.</p>
+            <a href="#" class="btn">Download Sorting Guide</a>
+            <a href="#" class="btn">Join Volunteer Programs</a>
+        </section>
+    </div>
+<footer>
+    <p>© <span id="current-year"></span> Waste Sorting Initiative | Working together to build cleaner communities and promote greener living</p>
+</footer>
+<script>
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+</script>
+    <script>
+        // Create eco icon animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const ecoIconsContainer = document.getElementById('ecoIcons');
+            const icons = ['♻️', '🌱', '🌍', '🌳', '💧', '🍃'];
+            for(let i = 0; i < 30; i++) {
+                const icon = document.createElement('div');
+                icon.className = 'eco-icon';
+                icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+                icon.style.left = `${Math.random() * 100}%`;
+                icon.style.animationDuration = `${15 + Math.random() * 20}s`;
+                icon.style.animationDelay = `${Math.random() * 5}s`;
+                ecoIconsContainer.appendChild(icon);
+            }
+        });
+    </script>
+</body>
+</html>
